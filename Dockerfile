@@ -1,5 +1,5 @@
-FROM macadmins/crypt-server
-MAINTAINER Graham Gilbert <graham@grahamgilbert.com>
+FROM macadmins/crypt-server:2.1.0
+MAINTAINER Allister Banks <al@aru-b.com>
 
 ENV CRYPT_LDAP_SERVER_URI='ldap://ldap' CRYPT_LDAP_START_TLS=false \
 CRYPT_LDAP_USER_ATTR="sAMAccountName" \

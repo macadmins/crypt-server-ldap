@@ -1,10 +1,10 @@
 # Crypt-Server-LDAP
 
-This image comprises of a Crypt Server is able to use LDAP authentication. There are many, many things that may need to be changed for your environment - this image works with my AD environment. As such, you may need to override ``settings.py`` completely. This image uses [django-auth-ldap](https://pythonhosted.org/django-auth-ldap/index.html_) to connect to LDAP, so please refer to the documentation there if you need a more custom configuration.
+This image expands on Crypt Server and allows it to leverage LDAP authentication. There are numerous customizations that are necessary - this image is in use and working for several AD environments, but may not 100% work in yours. You should mount your own ``settings.py`` in the container, at least while figuring out what options you need. This image uses [django-auth-ldap](https://pythonhosted.org/django-auth-ldap/index.html_) to connect to LDAP, so please refer to the documentation there if you need more details on the configuration options.
 
 ## Usage
 
-This image extends (macadmins/sal)[https://registry.hub.docker.com/u/macadmins/sal/]. For full usage instructions for that image, see it's repository.
+For full usage instructions for [macadmins/crypt-server](https://hub.docker.com/r/macadmins/crypt-server/), please see its repository.
 
 ## Environment variables
 
