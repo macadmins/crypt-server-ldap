@@ -1,4 +1,4 @@
-FROM macadmins/crypt-server:2.1.0
+FROM macadmins/crypt-server:latest
 MAINTAINER Allister Banks <al@aru-b.com>
 
 ENV CRYPT_LDAP_SERVER_URI='ldap://ldap' CRYPT_LDAP_START_TLS=false \
